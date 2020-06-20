@@ -1,11 +1,54 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <!--  深色UI  -->
+    <style name="XUITheme.Phone.Dark" parent="XUITheme.Phone">
+        <item name="themeUIColor">@android:color/black</item>
+        <item name="iconBack">@drawable/ic_back_black</item>
+        <item name="iconFingerPrinter">@drawable/ic_finger_printer_black</item>
+        <item name="iconExit">@drawable/ic_exit_black</item>
+        <item name="iconSetting">@drawable/ic_setting_black</item>
+        <item name="selectorBottomNavigation">@color/selector_bottom_navigation_black</item>
+        <item name="iconFilter">@drawable/ic_filter_black</item>
+    </style>
+
+    <!--  浅色UI  -->
+    <style name="XUITheme.Phone.Light" parent="XUITheme.Phone">
+        <item name="themeUIColor">@android:color/white</item>
+        <item name="iconBack">@drawable/ic_back_white</item>
+        <item name="iconFingerPrinter">@drawable/ic_finger_printer_white</item>
+        <item name="iconExit">@drawable/ic_exit_white</item>
+        <item name="iconSetting">@drawable/ic_setting_white</item>
+        <item name="selectorBottomNavigation">@color/selector_bottom_navigation_white</item>
+        <item name="iconFilter">@drawable/ic_filter_white</item>
+    </style>
+
+    <!--  碧蓝航线-深色UI  -->
+    <style name="XUITheme.Phone.Dark.BLHX" parent="XUITheme.Phone.Dark">
+        <item name="themeBGColor">@color/themeBGColorBLHX</item>
+        <item name="colorAccent">?attr/themeBGColor</item>
+    </style>
+
+    <!--  碧蓝航线-浅色UI  -->
+    <style name="XUITheme.Phone.Light.BLHX" parent="XUITheme.Phone.Light">
+        <item name="themeBGColor">@color/themeBGColorBLHX</item>
+        <item name="colorAccent">?attr/themeBGColor</item>
+    </style>
+
+    <!--  赤色中轴-深色UI  -->
+    <style name="XUITheme.Phone.Dark.CSZZ" parent="XUITheme.Phone.Dark">
+        <item name="themeBGColor">@color/themeBGColorCSZZ</item>
+        <item name="colorAccent">?attr/themeBGColor</item>
+    </style>
+
+
+    <!--  赤色中轴-浅色UI  -->
+    <style name="XUITheme.Phone.Light.CSZZ" parent="XUITheme.Phone.Light">
+        <item name="themeBGColor">@color/themeBGColorCSZZ</item>
+        <item name="colorAccent">?attr/themeBGColor</item>
+    </style>
+
+    <style name="IndexToolBarStyle">
+        <item name="colorControlNormal">?attr/themeUIColor</item>
     </style>
 
 </resources>

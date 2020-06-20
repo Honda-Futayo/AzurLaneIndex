@@ -1,0 +1,156 @@
+<resources>
+    <string-array name="settings_theme_color_title">
+        <item>碧蓝航线（白色UI）</item>
+        <item>碧蓝航线（黑色UI）</item>
+        <item>赤色中轴（白色UI）</item>
+        <item>赤色中轴（黑色UI）</item>
+    </string-array>
+
+    <string-array name="settings_theme_color_value">
+        <item>BLHX_LIGHT</item>
+        <item>BLHX_DARK</item>
+        <item>CSZZ_LIGHT</item>
+        <item>CSZZ_DARK</item>
+    </string-array>
+
+    <string-array name="settings_theme_flag_title">
+        <item>白鹰联邦</item>
+        <item>皇家海军</item>
+        <item>铁血公国</item>
+        <item>重樱群岛</item>
+        <item>东煌</item>
+        <item>北方联合</item>
+        <item>自由鸢尾</item>
+        <item>维希教廷</item>
+        <item>撒丁帝国</item>
+    </string-array>
+
+    <string-array name="settings_theme_flag_value">
+        <item>USS</item>
+        <item>HMS</item>
+        <item>KMS</item>
+        <item>IJN</item>
+        <item>ROC</item>
+        <item>SN</item>
+        <item>FFNF</item>
+        <item>MNF</item>
+        <item>RN</item>
+    </string-array>
+
+    <string-array name="settings_wiki_timeout_title">
+        <item>3s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>v
+    </string-array>
+
+    <string-array name="settings_wiki_timeout_value">
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>v
+    </string-array>
+
+    <string-array name="ship_list_filter_all">
+        <item>查看所有</item>
+        <item>改造</item>
+    </string-array>
+
+    <string-array name="ship_list_filter_type">
+        <item>前排先锋</item>
+        <item>后排主力</item>
+        <item>驱逐</item>
+        <item>轻巡</item>
+        <item>重巡</item>
+        <item>超巡</item>
+        <item>战巡</item>
+        <item>战列</item>
+        <item>航战</item>
+        <item>重炮</item>
+        <item>航母</item>
+        <item>轻航</item>
+        <item>维修</item>
+        <item>潜艇</item>
+    </string-array>
+
+    <string-array name="ship_list_filter_rate">
+        <item>普通</item>
+        <item>稀有</item>
+        <item>精锐</item>
+        <item>超稀有</item>
+        <item>海上传奇</item>
+        <item>特别计划</item>
+        <item>决战方案</item>
+    </string-array>
+
+    <string-array name="ship_list_filter_camp">
+        <item>白鹰</item>
+        <item>皇家</item>
+        <item>重樱</item>
+        <item>铁血</item>
+        <item>东煌</item>
+        <item>撒丁帝国</item>
+        <item>北方联合</item>
+        <item>自由鸢尾</item>
+        <item>维希教廷</item>
+        <item>其他</item>
+        <item>联动-海王星</item>
+        <item>联动-哔哩哔哩</item>
+        <item>联动-传颂之物</item>
+        <item>联动-KizunaAI</item>
+        <item>联动-Hololive</item>
+    </string-array>
+
+    <string-array name="ship_list_filter_armor">
+        <item>轻型</item>
+        <item>中型</item>
+        <item>重型</item>
+    </string-array>
+
+    <string-array name="ship_list_filter_max_cost">
+        <item>3</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>19</item>
+    </string-array>
+
+    <string-array name="ship_list_filter_main_category">
+        <item>炮击</item>
+        <item>雷击</item>
+        <item>航空</item>
+        <item>防空</item>
+        <item>专属弹幕</item>
+        <item>特殊弹幕</item>
+        <item>航空弹幕</item>
+        <item>伤害</item>
+        <item>暴击</item>
+        <item>装填</item>
+        <item>散布</item>
+        <item>命中</item>
+        <item>机动</item>
+        <item>回避</item>
+        <item>护盾</item>
+        <item>减伤</item>
+        <item>回复</item>
+        <item>航速</item>
+        <item>氧气</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="ship_list_filter_sub_category">
+        <item>直击</item>
+        <item>自身增益</item>
+        <item>友军增益</item>
+        <item>阵营及同型舰增益</item>
+        <item>对敌减益</item>
+    </string-array>
+</resources>

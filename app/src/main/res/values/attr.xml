@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="themeBGColor" format="color"/>
+    <attr name="themeUIColor" format="color"/>
+
+    <attr name="iconBack" format="reference"/>
+    <attr name="iconFingerPrinter" format="reference"/>
+    <attr name="iconExit" format="reference"/>
+    <attr name="iconSetting" format="reference"/>
+    <attr name="iconFilter" format="reference"/>
+
+    <attr name="selectorBottomNavigation" format="reference"/>
+</resources>

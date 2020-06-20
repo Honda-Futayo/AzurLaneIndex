@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+
+    <com.xuexiang.xui.widget.imageview.RadiusImageView
+        android:id="@+id/radiusImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/default_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_border_color="?attr/themeBGColor"
+        app:riv_border_width="2dp"
+        app:riv_is_circle="true"
+        tools:background="@color/themeBGColorBLHX" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="?attr/themeBGColor"
+        app:layout_constraintStart_toStartOf="@+id/radiusImageView"
+        app:layout_constraintTop_toBottomOf="@+id/radiusImageView"
+        tools:text="DD-萨拉托加"
+        tools:background="@color/themeBGColorBLHX"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/flag_uss" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

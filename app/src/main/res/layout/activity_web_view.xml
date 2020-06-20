@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/themeBGColor"
+        android:fitsSystemWindows="true"
+        app:titleTextColor="?attr/themeUIColor"
+        app:navigationIcon="?attr/iconBack"
+        app:menu="@menu/web_activity_toolbar_menu"
+        android:theme="@style/IndexToolBarStyle"
+        tools:background="@color/themeBGColorBLHX"
+        tools:navigationIcon="@drawable/ic_back_white"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xuexiang.xui.widget.statelayout.StatefulLayout
+            android:id="@+id/state_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/web_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.xuexiang.xui.widget.statelayout.StatefulLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

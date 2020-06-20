@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/ship_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="#000" />
+
+    <TextView
+        android:id="@+id/level_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/ship_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        tools:text="舰船等级"/>
+
+    <TextView
+        android:id="@+id/ship_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/level_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:text="舰船名称"/>
+
+    <ImageView
+        android:id="@+id/value_table_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_arrow_right"
+        android:tint="?attr/themeUIColor"
+        app:layout_constraintTop_toBottomOf="@+id/ship_id"
+        app:layout_constraintBottom_toTopOf="@+id/split_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:tint="@color/themeBGColorBLHX"/>
+
+    <View
+        android:id="@+id/split_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ship_name"
+        tools:background="@color/themeBGColorBLHX"/>
+
+    <com.xuexiang.xui.widget.layout.ExpandableLayout
+        android:id="@+id/value_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/split_line"
+        tools:el_expanded="true"
+        tools:background="@color/themeBGColorBLHX">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_durable"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/durable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_reload"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/reload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_shelling"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/shelling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_torpedo"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/torpedo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_maneuver"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/maneuver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_antiAircraft"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/antiAircraft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_aviation"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/aviation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_cost"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_antiSubmarine"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/antiSubmarine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_lucky"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/lucky"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_speed"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        android:text="@string/ship_wiki_list_value_tip_oxygen"
+                        tools:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/oxygen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="?attr/themeUIColor"
+                        tools:text="100"
+                        tools:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.xuexiang.xui.widget.layout.ExpandableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

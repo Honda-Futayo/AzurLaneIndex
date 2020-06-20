@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ShipListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/themeBGColor"
+        android:fitsSystemWindows="true"
+        app:title="舰船图鉴"
+        app:titleTextColor="?attr/themeUIColor"
+        app:navigationIcon="?attr/iconBack"
+        tools:background="@android:color/black"
+        tools:navigationIcon="@drawable/ic_back_white"/>
+
+    <com.xuexiang.xui.widget.layout.ExpandableLayout
+        android:id="@+id/filter_table"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/themeBGColor"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ship_wiki_filter_all"
+                        android:textColor="@android:color/black" />
+
+                    <com.xuexiang.xui.widget.flowlayout.FlowTagLayout
+                        android:id="@+id/filter_tag_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ftl_check_mode="multi"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ship_wiki_filter_type"
+                        android:textColor="@android:color/black" />
+
+                    <com.xuexiang.xui.widget.flowlayout.FlowTagLayout
+                        android:id="@+id/filter_tag_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ftl_check_mode="multi" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ship_wiki_filter_rate"
+                        android:textColor="@android:color/black" />
+
+                    <com.xuexiang.xui.widget.flowlayout.FlowTagLayout
+                        android:id="@+id/filter_tag_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ftl_check_mode="multi" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ship_wiki_filter_camp"
+                        android:textColor="@android:color/black" />
+
+                    <com.xuexiang.xui.widget.flowlayout.FlowTagLayout
+                        android:id="@+id/filter_tag_camp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ftl_check_mode="multi" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ship_wiki_filter_armor"
+                        android:textColor="@android:color/black" />
+
+                    <com.xuexiang.xui.widget.flowlayout.FlowTagLayout
+                        android:id="@+id/filter_tag_armor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ftl_check_mode="multi" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ship_wiki_filter_max_cost"
+                        android:textColor="@android:color/black" />
+
+                    <com.xuexiang.xui.widget.flowlayout.FlowTagLayout
+                        android:id="@+id/filter_tag_max_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ftl_check_mode="multi" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ship_wiki_filter_main_category"
+                        android:textColor="@android:color/black" />
+
+                    <com.xuexiang.xui.widget.flowlayout.FlowTagLayout
+                        android:id="@+id/filter_tag_main_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ftl_check_mode="multi" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ship_wiki_filter_sub_category"
+                        android:textColor="@android:color/black" />
+
+                    <com.xuexiang.xui.widget.flowlayout.FlowTagLayout
+                        android:id="@+id/filter_tag_sub_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ftl_check_mode="multi" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.xuexiang.xui.widget.layout.ExpandableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/user_center"
+        android:icon="@drawable/ic_side_nav_user_center"
+        android:title="个人中心"/>
+
+    <item android:id="@+id/about"
+        android:icon="@drawable/ic_side_nav_about"
+        android:title="关于"/>
+
+    <item android:id="@+id/github"
+        android:icon="@drawable/ic_side_nav_github"
+        android:title="Github"/>
+</menu>

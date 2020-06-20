@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tag_item"
+        style="@style/TextStyle.Explain"
+        android:layout_height="32dp"
+        android:layout_marginTop="?attr/xui_config_content_spacing_horizontal"
+        android:layout_marginStart="?attr/xui_config_content_spacing_horizontal"
+        android:background="@drawable/bg_ship_list_filter_tag"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/selector_ship_list_filter_tag"
+        tools:textColor="@android:color/black"/>
+
+</LinearLayout>
